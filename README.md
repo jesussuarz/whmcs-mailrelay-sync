@@ -1,5 +1,7 @@
 # WHMCS Mailrelay Sync Module
-
+<p align="center">
+    <img src="img/mailrelay.png" alt="Mailrelay WHMCS Sync" width="300"/>
+</p>
 This WHMCS addon synchronizes your WHMCS client list with your Mailrelay account. It supports **manual synchronization**, **automatic synchronization via cron**, and **auto-sync when adding or editing clients**.
 
 ## Features
@@ -46,7 +48,6 @@ curl -s your_whmcs/modules/addons/mailrelay/cron_sync.php?key=YOUR_KEY
 ```
 
 ## Replace:
-* /opt/plesk/php/8.1/bin/php: Path to your PHP binary (adjust for your environment).
 * YOUR_WHMCS: Your WHMCS installation.
 * YOUR_KEY: Replace with your configured GET key.
 
@@ -60,6 +61,15 @@ curl -s your_whmcs/modules/addons/mailrelay/cron_sync.php?key=YOUR_KEY
 * When all clients are synced, the offset resets to 0.
 
 This ensures that each run only processes new or unsynced clients.
+
+## Screenshots:
+<p align="center">
+    <img src="img/mailrelay_front.png" alt="Mailrelay WHMCS Sync"/>
+</p>
+
+<p align="center">
+    <img src="img/mailrelay_config.png" alt="Mailrelay WHMCS Sync"/>
+</p>
 
 ## License
 MIT License.
